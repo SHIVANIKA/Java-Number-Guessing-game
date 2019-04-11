@@ -1,0 +1,72 @@
+package project1;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class NumberGuessing {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Random rand = new Random();
+		int numberToGuess=rand.nextInt(10);
+		int numberOftries = 0;
+		Scanner input = new Scanner (System.in);
+		int guess;
+		System.out.println("Guess a Number between 1 and 10:");
+		guess= input.nextInt();
+		nextInt();
+//		for(int i = 0; i<=10; i++) {
+//			guess= ((((guess*2)+100)/2)-50);
+			
+		System.out.println("multiply " + guess + " with 2");
+		System.out.println(guess + " *");
+		int two = input.nextInt();
+		System.out.println(guess = guess * two);
+		System.out.println("add "+ guess +" with : 100 ");
+		System.out.println(guess + " +");
+		int hundred = input.nextInt();
+		System.out.println(guess = guess +100);
+		System.out.println("divide " + guess + " with : 2");
+		System.out.println(guess + "/");
+		int two1 = input.nextInt();
+		System.out.println( guess = guess/2);
+		System.out.println("subtract " + guess + " with : 50");
+		System.out.println(guess + "-");
+		int fifty = input.nextInt();
+		System.out.println( guess = guess-50);
+		System.out.println("The guessing number is: "+ guess);
+		
+	}
+
+	private static void nextInt() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
+
+
+
+output:
+
+
+
+Guess a Number between 1 and 10:
+3
+multiply 3 with 2
+3 *
+2
+6
+add 6 with : 100 
+6 +
+100
+106
+divide 106 with : 2
+106/
+2
+53
+subtract 53 with : 50
+53-
+50
+3
+The guessing number is: 3
